@@ -1,0 +1,38 @@
+<% include ./partials/header %>
+
+	<div class="container">
+    <h1>Upload A New Post!</h1>
+	<form action="/newlist" method="POST">
+	  <!-- <div class="form-group">
+	    <label for="exampleFormControlFile1" id="photo">Upload a Photo!</label>
+	    <input type="file" class="form-control-file" id="photo" name= 'photo'>
+	  </div> -->
+
+    <div class="form-group">
+      <label for="exampleFormControlFile1" id="photo">Upload a Photo!</label>
+      <input type="text" class="form-control-file" name= 'photo'placeholder="Your URL here.">
+    </div>
+
+	  <div class="form-group">
+    <label for="exampleFormControlFile1">What are you selling?</label>
+    <textarea class="form-control blackText" id="item" name="item" rows="1" placeholder="A big, red, rocket ship!" required=""></textarea>
+  </div>
+
+<div class="float-right form-group">
+  <label>give us your price.</label>
+  <input style="margin-left: .5em;" name="price" type="text" class="col-md-6 priceInput" required="">$
+</div>
+
+	  <div class="form-group">
+    <label for="description">Give buyers a description of what your selling</label>
+    <textarea class="form-control blackText" id="description" rows="5" name="description" placeholder="What exactly are you selling? And what kind of condition is it in?" required=""></textarea>
+  </div>
+  <div class="form-group">
+    		        <button type="submit" class="btn btn-primary" onclick="confirm()">
+    		            Save
+    		        </button>
+    		        <a class="btn btn-danger" style="margin-left: .5em;" href="/" role="button">Cancel</a>
+    		    </div>
+	</form>
+</div>
+<% include ./partials/footer %>

@@ -1,0 +1,55 @@
+body { 
+  background: url("https://images.unsplash.com/photo-1522205987242-8e22924ab42a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0f679eb8f15705d46ea90008f39642b&auto=format&fit=crop&w=634&q=80") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h5 {
+	margin-top: 5em;
+}
+
+h1 {
+	font-family: 'Great Vibes', cursive;
+	text-decoration: underline;
+	text-align: center;
+}
+
+#nav {
+	margin-bottom: 2em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.5s all ease-in-out;
+	z-index: 99999;
+}
+
+#footerBreak {
+	border-width: 2px;
+	border-color: #007bff;
+}
+
+.blackText {
+	color: black;
+}
+
+}
+#itemPageImg {
+	float: left;
+}
+
+ul {
+	display: inline;
+}
+
+.container {
+	margin-top: 5em;
+}
+.priceInput {
+	font-weight: bold;
+}
+
+nav {
+	margin-bottom: 2em;
+}
