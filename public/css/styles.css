@@ -1,5 +1,5 @@
 body { 
-  background: url("https://images.unsplash.com/photo-1522205987242-8e22924ab42a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0f679eb8f15705d46ea90008f39642b&auto=format&fit=crop&w=634&q=80") no-repeat center center fixed; 
+  background: url("https://picsum.photos/1920/1080/?random") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,6 +13,33 @@ h1 {
 	font-family: 'Great Vibes', cursive;
 	text-decoration: underline;
 	text-align: center;
+}
+
+ul {
+	display: inline;
+}
+
+label {
+	color: white;
+}
+
+.container {
+	margin-top: 5em;
+}
+
+.priceInput {
+	font-weight: bold;
+}
+
+.blackText {
+	color: black;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #nav {
@@ -30,26 +57,14 @@ h1 {
 	border-color: #007bff;
 }
 
-.blackText {
-	color: black;
-}
+
 
 }
 #itemPageImg {
 	float: left;
+	padding: 1em
 }
 
-ul {
-	display: inline;
-}
-
-.container {
-	margin-top: 5em;
-}
-.priceInput {
-	font-weight: bold;
-}
-
-nav {
-	margin-bottom: 2em;
+#itemTitle {
+	margin-top: .5em;
 }
