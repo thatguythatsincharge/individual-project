@@ -1,7 +1,7 @@
-var express = require('express');
-var bodyparser = require('body-parser');
-var mysql = require('mysql');
-var ejs = require('ejs');
+const express = require('express');
+const bodyparser = require('body-parser');
+const mysql = require('mysql');
+const ejs = require('ejs');
 // connect to the db
 const con = mysql.createConnection({
 	host: 'localhost',
@@ -9,6 +9,7 @@ const con = mysql.createConnection({
 	password: 'root',
 	database: 'aleman'
 });
+
 
 var app = express();
 
@@ -25,16 +26,23 @@ app.get('/', function(req, res) {
 			throw err;
 		}
 		// when you render the index view template, send the result data along to it
-		res.render('index', { activePage: 'home', posts: result });
+		res.render('index', {
+			activePage: 'home',
+			posts: result
+		});
 	});
 });
 
 app.get('/newPost', function(req, res) {
-	res.render('newPost', { activePage: 'newPost' });
+	res.render('newPost', {
+		activePage: 'newPost'
+	});
 });
 
 app.get('/Sign_in', function(req, res) {
-	res.render('sign_in', { activePage: 'signIn' });
+	res.render('sign_in', {
+		activePage: 'signIn'
+	});
 });
 
 app.get('/itemPage/:id', function(req, res) {
@@ -45,10 +53,10 @@ app.get('/itemPage/:id', function(req, res) {
 		if (err) {
 			throw err;
 		}
-
 		res.render('itemPage', {
-		 currentItem: result[0], activePage: 'itemPage'
-		 });
+			currentItem: result[0],
+			activePage: 'itemPage'
+		});
 	});
 });
 
@@ -57,14 +65,14 @@ app.post('/newlist', function(req, res) {
 		"INSERT INTO posts (item, description, price, image_url) VALUES ('" +
 		req.body.item +
 		"', '" +
-		req.body.description + 
+		req.body.description +
 		"','" +
 		req.body.price +
 		"','" +
 		req.body.photo +
 		"')";
 
-		console.log(sql);
+	console.log(sql);
 
 	con.query(sql, function(err, result) {
 		if (err) {
@@ -72,9 +80,9 @@ app.post('/newlist', function(req, res) {
 		}
 		console.log('1 record inserted');
 		res.redirect('/');
-		});
 	});
+});
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(3000, function() {
 	console.log('App is running at http://localhost:3000');
 });

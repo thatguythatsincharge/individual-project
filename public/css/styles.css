@@ -6,7 +6,7 @@ body {
   background-size: cover;
 }
 h5 {
-	margin-top: 5em;
+	top: 5em;
 }
 
 h1 {
@@ -61,8 +61,7 @@ label {
 
 }
 #itemPageImg {
-	float: left;
-	padding: 1em
+	padding: 1em;
 }
 
 #itemTitle {

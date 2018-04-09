@@ -1,21 +1,31 @@
 <% include ./partials/header %>
-<div class="container">
-		<div class="card">
-			<h1 id="itemTitle">
-				<%= currentItem.item %>
-			</h1>
-		</div>
-	<br>
-		<div class="card">
-				<img id="itemPageImg" class="center" src="<%=currentItem.image_url%>">
 			<div class="container">
-				<p>
-					<%=currentItem.description%>
-				</p>
-				<p class="priceInput">
-					$<%= currentItem.price %>
-				</p>
+				<div class="card">
+					<h1 id="itemTitle">
+						<%= currentItem.item %>
+					</h1>
+				</div>
+				<br>
+				<div class="card">
+					<img id="itemPageImg" class="center" src="<%=currentItem.image_url%>">
+					<div class="container">
+						<p>
+							<%=currentItem.description%>
+						</p>
+						<p class="priceInput">
+							$<%= currentItem.price %>
+						</p>
+						<a href="/itemPage">
+							<button type="button" class="btn btn-primary">
+								Buy Now
+							</button>
+						</a>
+						<a href="/itemPage">
+							<button type="button" class="btn btn-info">
+								Add to cart
+							</button>
+						</a>
+					</div>
+				</div>
 			</div>
-		</div>
-</div>
 <% include ./partials/footer %>
