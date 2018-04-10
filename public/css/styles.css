@@ -42,6 +42,14 @@ label {
     margin-right: auto;
 }
 
+.main {
+	opacity: .90;
+}
+
+img {
+	opacity: 1;
+}
+
 #nav {
 	margin-bottom: 2em;
 	position: fixed;
@@ -64,6 +72,12 @@ label {
 	padding: 1em;
 }
 
-#itemTitle {
+.titleCard {
 	margin-top: .5em;
+	display: inline-block;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: .2em;
+    border-radius: 15px;
 }
