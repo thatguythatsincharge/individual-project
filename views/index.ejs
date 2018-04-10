@@ -15,7 +15,7 @@
 									<li class="media my-4">	
 										<div class="media-body" id="first">
 											<a href="/itemPage/<%=posts[i].id%>">
-												<img class="mr-3 img-thumbnail" src="<%= posts[i].image_url %>">
+												<img class="mr-3 img-thumbnail solid" src="<%= posts[i].image_url %>">
 											</a>
 											<div class="container">
 												<h5 class="mt-0 mb-1">
@@ -24,12 +24,12 @@
 												<p>
 													<%= posts[i].description %>
 												</p>
-												<a href="/itemPage">
+												<a href="/itemPage/<%= posts[i].id %>">
 													<button type="button" class="btn btn-primary">
 														Buy Now
 													</button>
 												</a>
-												<a href="/itemPage">
+												<a href="/itemPage/<%= posts[i].id %>">
 													<button type="button" class="btn btn-info">
 														Add to cart
 													</button>

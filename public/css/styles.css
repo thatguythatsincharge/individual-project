@@ -42,12 +42,10 @@ label {
     margin-right: auto;
 }
 
-.main {
-	opacity: .90;
-}
-
-img {
-	opacity: 1;
+.card {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #nav {
@@ -72,10 +70,14 @@ img {
 	padding: 1em;
 }
 
+.button-container {
+	text-align: right;
+}
+
 .titleCard {
 	margin-top: .5em;
 	display: inline-block;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 0 auto;
     text-align: center;
     padding: .2em;
