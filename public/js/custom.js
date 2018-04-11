@@ -15,4 +15,12 @@ $(document).ready(function() {
 
 		lastScrollTop = top;
 	});
+
+$('#navbarDropdown').click(function() {
+	$(".dropdown-menu").fadeToggle("fast");
+	});
+
+$(".main").click(function() {
+	$(".dropdown-menu").fadeOut("fast");
+	});
 });
