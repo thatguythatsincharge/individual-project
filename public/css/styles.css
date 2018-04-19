@@ -44,8 +44,7 @@ label {
 
 .card {
 	background-color: rgba(255, 255, 255, 0.9);
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin: 1em;
 }
 
 #nav {
@@ -82,4 +81,5 @@ label {
     text-align: center;
     padding: .2em;
     border-radius: 15px;
+    -webkit-animation-delay: 3s;
 }

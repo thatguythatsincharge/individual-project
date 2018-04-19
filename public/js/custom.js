@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	
+
+
 	var lastScrollTop = 0;
 
 	$(document).scroll(function() {
@@ -16,11 +17,17 @@ $(document).ready(function() {
 		lastScrollTop = top;
 	});
 
-$('#navbarDropdown').click(function() {
-	$(".dropdown-menu").fadeToggle("fast");
+	$('#navbarDropdown').click(function() {
+		$(".dropdown-menu").fadeToggle("fast");
 	});
 
-$(".main").click(function() {
-	$(".dropdown-menu").fadeOut("fast");
+	$(".main").click(function() {
+		$(".dropdown-menu").fadeOut("fast");
 	});
+
+	$('#save').on("click", function() {
+		$('#title').addClass("animated shake");
+	});
+
+
 });

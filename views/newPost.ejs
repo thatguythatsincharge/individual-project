@@ -12,24 +12,24 @@
                 	   <input type="file" class="form-control-file" id="photo" name= 'photo'>
                 	</div> -->
                     <div class="form-group">
-                        <label for="exampleFormControlFile1" id="photo">
+                        <label for="exampleFormControlFile1">
                             Upload a Photo!
                         </label>
-                        <input type="text" class="form-control-file" name= 'photo'placeholder="Your URL here.">
+                        <input type="text" class="form-control-file" name= 'photo'placeholder="Your URL here." id="photo">
                     </div>
 
                 	<div class="form-group">
                         <label for="exampleFormControlFile1">
                             What are you selling?
                         </label>
-                        <textarea class="form-control blackText" id="item" name="item" rows="1" placeholder="A big, red, rocket ship!" required=""></textarea>
+                        <textarea class="form-control blackText" id="item" name="item" rows="1" placeholder="A big, red, rocket ship!" id="title" required=""></textarea>
                     </div>
 
                     <div class="float-right form-group">
                         <label>
                             give us your price.
                         </label>
-                        <input style="margin-left: .5em;" name="price" type="text" class="col-md-6 priceInput" required="">$
+                        <input style="margin-left: .5em;" name="price" type="text" class="col-md-6 priceInput" id="price" required="">$
                     </div>
 
                     <div class="form-group">
@@ -39,7 +39,7 @@
                         <textarea class="form-control blackText" id="description" rows="5" name="description" placeholder="What exactly are you selling? And what kind of condition is it in?" required=""></textarea>
                     </div>
                     <div class="form-group">
-        		        <button type="submit" class="btn btn-primary" onclick="/newlist">
+        		        <button type="submit" class="btn btn-primary" onclick="/newlist" id="save">
         		            Save
         		        </button>
         		        <a class="btn btn-danger" style="margin-left: .5em;" href="/" role="button">
